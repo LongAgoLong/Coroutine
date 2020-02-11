@@ -27,7 +27,7 @@ class ApiProxy private constructor() {
             .dns(TimeoutDNS(3, TimeUnit.SECONDS))
             .retryOnConnectionFailure(true)
             .addInterceptor(RetryIntercepter(2))
-            .addInterceptor(LogIntercepter("OKHTTP", true))
+            .addInterceptor(LogIntercepter("OKHTTP", false))
             .proxy(Proxy.NO_PROXY)
             //其他配置
             .build()
