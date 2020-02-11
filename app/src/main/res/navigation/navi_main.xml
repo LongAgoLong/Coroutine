@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/timeline"
+    android:id="@+id/navi_main">
+    <fragment
+        android:id="@+id/timeline"
+        android:name="com.leo.coroutine.ui.fragment.TimelineFragment"
+        tools:layout="@layout/fragment_timeline">
+
+        <!-- TODO STEP 7.1 - Add action with transitions -->
+        <!--<action-->
+        <!--android:id="@+id/next_action"-->
+        <!--app:destination="@+id/flow_step_one_dest"-->
+        <!--app:enterAnim="@anim/slide_in_right"-->
+        <!--app:exitAnim="@anim/slide_out_left"-->
+        <!--app:popEnterAnim="@anim/slide_in_left"-->
+        <!--app:popExitAnim="@anim/slide_out_right" />-->
+        <!-- TODO END STEP 7.1 -->
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/indexrumor"
+        android:name="com.leo.coroutine.ui.fragment.IndexRumorFragment"
+        tools:layout="@layout/fragment_indexrumor">
+<!--        <argument-->
+<!--            android:name="flowStepNumber"-->
+<!--            android:defaultValue="1"-->
+<!--            app:argType="integer" />-->
+    </fragment>
+
+</navigation>
